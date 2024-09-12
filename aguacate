@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aguacate Bailarín</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .aguacate {
+            width: 150px;
+            height: 150px;
+            background-image: url('https://images.vexels.com/content/185791/preview/kawaii-winking-avocado-489a8b.png'); /* Imagen de aguacate */
+            background-size: cover;
+            position: relative;
+            animation: dance 2s infinite;
+        }
+
+        @keyframes dance {
+            0% { transform: translateX(0) rotate(0); }
+            25% { transform: translateX(-20px) rotate(-20deg); }
+            50% { transform: translateX(0) rotate(0); }
+            75% { transform: translateX(20px) rotate(20deg); }
+            100% { transform: translateX(0) rotate(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="aguacate"></div>
+</body>
+</html>
